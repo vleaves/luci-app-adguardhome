@@ -44,7 +44,8 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo apt-get update
-          sudo apt-get -y install build-essential curl git tar wget python3 rsync zstd
+          sudo apt-get install -y sudo wget
+          wget https://raw.githubusercontent.com/friendlyarm/build-env-on-ubuntu-bionic/master/install.sh && chmod 755 install.sh && sudo ./install.sh
 
       - name: Download OpenWrt ${{ matrix.version.short }} SDK
         run: |
