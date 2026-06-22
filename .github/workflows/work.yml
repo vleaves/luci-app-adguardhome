@@ -99,7 +99,7 @@ jobs:
           for f in ../openwrt-sdk/bin/packages/aarch64_generic/base/luci-app-adguardhome-*.apk; do
             if [ -f "$f" ]; then
               newname="luci-app-adguardhome_${PKG_VER}_${PKG_REL}_openwrt-${SDK_VERSION}_all.apk"
-              cp "$f" "ipk_output/${newname}"
+              cp "$f" "apk_output/${newname}"
               echo "Found: $newname"
             fi
           done
