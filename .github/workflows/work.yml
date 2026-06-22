@@ -1,4 +1,4 @@
-name: Compile and Release All OpenWrt Versions
+name: Compile luci-app-adguardhome
 
 on:
   push:
